@@ -1,0 +1,149 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RASAM & RAMEN- Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('background.png') no-repeat center center/cover;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero h1{
+      font-size: 4em;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      animation: slideInDown 1.5s ease-out;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      background-color: #f4a261;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+    .nav a:hover {
+      background-color: #e76f51;
+    }
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      justify-content: space-around;
+      background: #fff3e6;
+    }
+    .highlight-card {
+      width: 300px;
+      margin: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .highlight-card:hover {
+      transform: translateY(-10px);
+    }
+    .highlight-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .highlight-card h3 {
+      margin: 10px;
+      color: #264653;
+    }
+    .highlight-card p {
+      padding: 0 10px 10px;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      background-color: #f4a261;
+      color: white;
+      padding: 20px;
+    }
+
+    @keyframes slideInDown {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="admin.html">Administration</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <section class="hero">
+    <h1>Welcome to RASAM & RAMEN 👩‍🍳A Multicuisine Restaurant</h1>
+    
+  </section>
+
+  <section class="highlights">
+    <div class="highlight-card">
+      <img src="rasam ramen.jpg" alt="Dish 1">
+      <h3>Signature fusion dish </h3>
+      <p>Rasam Ramen Bowl (Fusion of South Indian rasam base with ramen noodles, soft egg, and veggies/meat).</p>
+    </div>
+    <div class="highlight-card">
+      <img src="fried rice.webp" alt="Sandwich">
+      <h3>Indo-Asian Fried Rice</h3>
+      <p>Spicy rice with gunpowder prawns.</p>
+    </div>
+    <div class="highlight-card">
+      <img src="dosa quesadilla.avif" alt="Choco Lava Cake">
+      <h3>Dosa Quesadilla</h3>
+      <p>Layer of melted cheese and other fillings like vegetables with two dosa.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RASAM & RAMEN . Created by KAVIYA V M.</p>
+  </footer>
+</body>
+</html>
